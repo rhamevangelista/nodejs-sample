@@ -1,0 +1,10 @@
+extends base
+
+block content
+	div.card-two
+		img(src=`${person.image}` alt=`${person.name}` style="width:100%")
+		h1 #{person.name}
+		p Age: #{person.age}
+		p Bio: #{person.bio}
+		p
+			button Contact
