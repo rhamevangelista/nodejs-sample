@@ -1,0 +1,11 @@
+extends base
+
+block content
+  each person in people
+	div.card
+		img(src=`${person.image}` alt=`${person.name}` style="width:100%")
+		div.container
+			h4
+				b ${person.name}
+				p ${person.age}
+		
